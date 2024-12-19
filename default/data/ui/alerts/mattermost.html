@@ -1,0 +1,50 @@
+<form class="form-horizontal form-complex">
+    <!-- Webhook URL -->
+    <div class="control-group">
+        <label class="control-label" for="webhook_url">Webhook URL</label>
+
+        <div class="controls">
+            <input type="text" name="action.mattermost.param.webhook_url" id="webhook_url" />
+            <span class="help-block">Mattermost webhook URL to use.</span>
+        </div>
+    </div>
+    <br clear="both" />
+
+    <!-- Severity Dropdown -->
+    <div style="clear: both;" class="control-group">
+        <label class="control-label" for="mattermost_severity">Severity</label>
+        <div class="controls">
+            <select name="action.mattermost.param.severity" id="mattermost_severity">
+                <option value="none">None (no icon)</option>
+                <option value="info">✅ Info</option>
+                <option value="warning">⚠️ Warning</option>
+                <option value="critical">‼️ Error</option>
+            </select>
+            <span class="help-block">Select the severity prefix of the alert.</span>
+        </div>
+    </div>
+
+    <br clear="both" />
+
+    <!-- Mattermost Channel -->
+    <div style="clear: both;" class="control-group">
+        <label class="control-label" for="mattermost_channel">Channel</label>
+
+        <div class="controls">
+            <input type="text" name="action.mattermost.param.channel" id="mattermost_channel" placeholder="Optional" />
+            <span class="help-block">The Mattermost channel to send the message to.</span>
+        </div>
+    </div>
+    <br clear="both" />
+
+    <!-- Fields -->
+    <div style="clear: both;" class="control-group">
+        <label class="control-label" for="mattermost_fields">Fields</label>
+
+        <div class="controls">
+            <input type="text" name="action.mattermost.param.fields" id="mattermost_fields" placeholder="Optional" />
+            <span class="help-block">Show one or more fields from the search results in your Mattermost message.
+                Comma-separated list of field names. Allows wildcards. eg. <code>index,source*</code>.</span>
+        </div>
+    </div>
+</form>
