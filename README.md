@@ -13,9 +13,11 @@ Based off [this Slack](https://github.com/splunk/splunk-app-examples/tree/master
 App installation requires admin privileges.
 
 - Navigate to "Manage apps" and click "Install app from file"
-- Upload the app bundle
+- Upload the app bundle after creating it
 
-Alternatively, copy the contents of this project to `$SPLUNK_HOME/etc/apps/mattermost_alerts`
+Alternatively, copy the contents of this project to `$SPLUNK_HOME/etc/apps/mattermost_alerts`.
+
+Or, lazy mode, `git clone https://github.com/leonjza/splunk-mattermost-alert.git` in `$SPLUNK_HOME/etc/apps`.
 
 ## Configuration
 
